@@ -16,7 +16,6 @@ export default {
   fetchComedyMovies: {
     title: "Comedy",
     url: `/discover/movie?api_key=${API_KEY}&with_genres=35`,
-    //https://api.themoviedb.org/3/discover/movie?api_key=e895ddcdef11f1e6ddbe3dd10fddf24b&with_genres=27
   },
   fetchHorrorMovies: {
     title: "Horror",

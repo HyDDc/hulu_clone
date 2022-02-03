@@ -10,7 +10,6 @@ const Thumbnail = forwardRef(({ result }, ref) => {
       className="p-2 group cursor-pointer transition duration-100 ease-in transform sm:hover:scale-105 hover:z-5"
     >
       <Image
-        alt="alt_logo"
         layout="responsive"
         height={1080}
         width={1920}
@@ -18,6 +17,7 @@ const Thumbnail = forwardRef(({ result }, ref) => {
           `${BASE_URL}${result.backdrop_path || result.poster_path}` ||
           `${BASE_URL}${result.poster_path}`
         }
+        alt="picture of thumbnail"
       />
       <div className="p-2">
         <p className="truncate max-w-md">{result.overview}</p>
